@@ -117,6 +117,8 @@ h3 {
   margin: 0 0 0 -11px;
   padding: 0;
 
+  overflow: scroll;
+
   list-style: none;
 }
 
@@ -157,6 +159,7 @@ h3 {
 
 .review-item {
   display: flex;
+  align-items: flex-start;
   width: 100%;
   padding: 130px 68px;
 
@@ -218,6 +221,10 @@ h3 {
 
 .star {
   height: 30px;
+}
+
+.review-item__content .star {
+    height: 20px;
 }
 
 .star-source {

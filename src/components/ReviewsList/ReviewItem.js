@@ -1,9 +1,11 @@
 import React from 'react';
 import dayjs from 'dayjs';
+import { StarRating } from '../StarRating';
 export const ReviewItem = ({ review }) => {
   const {
     text,
     time_created,
+    rating,
     user: { name, image_url, profile_url },
   } = review;
 
@@ -24,7 +26,10 @@ export const ReviewItem = ({ review }) => {
           </p>
         </div>
       </div>
-      <div className="review-item__content">{text}</div>
+      <div className="review-item__content">
+      <StarRating rating={rating}/>
+      <p>{text}</p>
+      </div>
     </div>
   );
 };
