@@ -65,12 +65,12 @@ h2 {
   text-transform: uppercase;
 }
 
-.restaurants-list-item__status-indicator {
+.status__indicator {
     margin-right: 4px;
     color: #FF3548;
 }
 
-.restaurants-list-item__status-indicator--open {
+.status__indicator--open {
     color: #00E8A4;
 }
 

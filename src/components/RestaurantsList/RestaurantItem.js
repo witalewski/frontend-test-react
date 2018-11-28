@@ -1,7 +1,7 @@
 import React from 'react';
 import { bool, number, shape, string } from 'prop-types';
 import { PropTypes } from 'mobx-react';
-import { StatusIndicator } from './StatusIndicator';
+import { Status } from '../Status';
 
 const RestaurantItem = ({
   restaurant: { name, image_url, rating, categories, price, is_closed },
@@ -14,12 +14,10 @@ const RestaurantItem = ({
       <h2>{name}</h2>
       <p className="restaurants-list-item-rating">{rating}</p>
       <div className="restaurants-list-item__details">
-        <span>
+        <div>
           {category} • {price}
-        </span>
-        <span>
-          <StatusIndicator open={!is_closed} />
-        </span>
+        </div>
+        <Status open={!is_closed} />
       </div>
       <div className="restaurants-list-item__learn-more-wrapper">
         <button>Learn more</button>
