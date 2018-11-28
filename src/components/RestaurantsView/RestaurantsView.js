@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { shape, string } from 'prop-types';
 import { inject, observer, PropTypes } from 'mobx-react';
 
-class RestaurantsList extends Component {
+class RestaurantsView extends Component {
   static propTypes = {
     restaurants: PropTypes.arrayOrObservableArrayOf(
       shape({
@@ -13,20 +13,28 @@ class RestaurantsList extends Component {
   };
   render() {
     return (
-      <div>
-        <h1>Restaurants</h1>
-        <ul>
-          {this.props.restaurants.map(({ id, name }) => (
-            <li key={id}>{name}</li>
-          ))}
-        </ul>
-      </div>
+      <Fragment>
+        <div className="hero">
+          <h1>Restaurants</h1>
+        </div>
+        <div>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </div>
+        <div className="restaurants-list">
+          <ul>
+            {this.props.restaurants.map(({ id, name }) => (
+              <li key={id}>{name}</li>
+            ))}
+          </ul>
+        </div>
+      </Fragment>
     );
   }
 }
 
-export { RestaurantsList };
+export { RestaurantsView };
 export default inject(({ appState }) => ({
   restaurants: appState.restaurants,
   setRestaurants: appState.setRestaurants,
-}))(observer(RestaurantsList));
+}))(observer(RestaurantsView));
