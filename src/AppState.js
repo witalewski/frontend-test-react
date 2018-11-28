@@ -1,15 +1,13 @@
-import { observable, action, computed } from 'mobx';
+import { observable, action } from 'mobx';
+import MOCK_RESTAURANTS from './fixtures/restaurants.json';
 
 class AppState {
-  @observable name = '';
+  @observable restaurants = MOCK_RESTAURANTS.businesses;
 
-  @action setName = name => {
-    this.name = name;
-  };
-
-  @computed get greeting() {
-    return `Hello, ${this.name || 'User'}!`;
+  @action setRestaurants = restaurants => {
+    this.restaurants = restaurants;
   }
+
 }
 
 export { AppState };

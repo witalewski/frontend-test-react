@@ -1,0 +1,785 @@
+{
+  "businesses": [
+    {
+      "id": "dTVH0kgphdVy3xrXdx7DVg",
+      "alias": "ptasie-radio-poznań-2",
+      "name": "Ptasie Radio",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/TK2bZzEOXWIYZv092rvDZQ/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/ptasie-radio-pozna%C5%84-2?adjust_creative=FTjq3uc6_lxRoogspiYpbA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FTjq3uc6_lxRoogspiYpbA",
+      "review_count": 26,
+      "categories": [
+        {
+          "alias": "cafes",
+          "title": "Cafes"
+        },
+        {
+          "alias": "modern_european",
+          "title": "Modern European"
+        },
+        {
+          "alias": "coffee",
+          "title": "Coffee & Tea"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 52.40644,
+        "longitude": 16.919857
+      },
+      "transactions": [],
+      "price": "$",
+      "location": {
+        "address1": "ul. Kościuszki 74",
+        "address2": "",
+        "address3": "",
+        "city": "Poznań",
+        "zip_code": "61-892",
+        "country": "PL",
+        "state": "WP",
+        "display_address": ["ul. Kościuszki 74", "61-892 Poznań", "Poland"]
+      },
+      "phone": "+48618536451",
+      "display_phone": "+48 61 853 64 51",
+      "distance": 1430.8572158077104
+    },
+    {
+      "id": "ECu54QCqvdb_xucDmxBnkA",
+      "alias": "wiejskie-jadło-poznań-2",
+      "name": "Wiejskie Jadło",
+      "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/WFfeZgjsS7Gh-bv7hG-MJw/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/wiejskie-jad%C5%82o-pozna%C5%84-2?adjust_creative=FTjq3uc6_lxRoogspiYpbA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FTjq3uc6_lxRoogspiYpbA",
+      "review_count": 15,
+      "categories": [
+        {
+          "alias": "modern_european",
+          "title": "Modern European"
+        },
+        {
+          "alias": "polish",
+          "title": "Polish"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 52.40835,
+        "longitude": 16.9323
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "ul. Stary Rynek 77",
+        "address2": null,
+        "address3": null,
+        "city": "Poznań",
+        "zip_code": "61-772",
+        "country": "PL",
+        "state": "WP",
+        "display_address": ["ul. Stary Rynek 77", "61-772 Poznań", "Poland"]
+      },
+      "phone": "+48618536600",
+      "display_phone": "+48 61 853 66 00",
+      "distance": 2287.2362244901437
+    },
+    {
+      "id": "wPSiShW_YSwlyKAJJUZ4fQ",
+      "alias": "bagels-a-friends-poznań-2",
+      "name": "Bagels & Friends",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/zmRMxckIj4rhutGrSRcvYA/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/bagels-a-friends-pozna%C5%84-2?adjust_creative=FTjq3uc6_lxRoogspiYpbA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FTjq3uc6_lxRoogspiYpbA",
+      "review_count": 9,
+      "categories": [
+        {
+          "alias": "breakfast_brunch",
+          "title": "Breakfast & Brunch"
+        },
+        {
+          "alias": "cafes",
+          "title": "Cafes"
+        },
+        {
+          "alias": "coffee",
+          "title": "Coffee & Tea"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 52.399683350097,
+        "longitude": 16.8932677517625
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "ul. Wyspiańskiego 26",
+        "address2": "",
+        "address3": "",
+        "city": "Poznań",
+        "zip_code": "60-751",
+        "country": "PL",
+        "state": "WP",
+        "display_address": ["ul. Wyspiańskiego 26", "60-751 Poznań", "Poland"]
+      },
+      "phone": "+48612223940",
+      "display_phone": "+48 61 222 39 40",
+      "distance": 539.8285147630457
+    },
+    {
+      "id": "LG5A63aiPMltaO6NnIOvOg",
+      "alias": "cacao-republika-poznań",
+      "name": "Cacao Republika",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/8KgHCDGNncE8j8qjDUoYIA/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/cacao-republika-pozna%C5%84?adjust_creative=FTjq3uc6_lxRoogspiYpbA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FTjq3uc6_lxRoogspiYpbA",
+      "review_count": 15,
+      "categories": [
+        {
+          "alias": "cafes",
+          "title": "Cafes"
+        },
+        {
+          "alias": "coffee",
+          "title": "Coffee & Tea"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 52.4089494046833,
+        "longitude": 16.9323223227765
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "ul. Zamkowa 7",
+        "address2": null,
+        "address3": null,
+        "city": "Poznań",
+        "zip_code": "61-768",
+        "country": "PL",
+        "state": "WP",
+        "display_address": ["ul. Zamkowa 7", "61-768 Poznań", "Poland"]
+      },
+      "phone": "+48618554378",
+      "display_phone": "+48 61 855 43 78",
+      "distance": 2314.6599540104785
+    },
+    {
+      "id": "g0BlDxXTNLrEWV6y-C3WfA",
+      "alias": "brovaria-poznań-3",
+      "name": "Brovaria",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/qJFUYLrzZxMHJ7jW80Ezbw/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/brovaria-pozna%C5%84-3?adjust_creative=FTjq3uc6_lxRoogspiYpbA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FTjq3uc6_lxRoogspiYpbA",
+      "review_count": 20,
+      "categories": [
+        {
+          "alias": "breweries",
+          "title": "Breweries"
+        },
+        {
+          "alias": "polish",
+          "title": "Polish"
+        }
+      ],
+      "rating": 4,
+      "coordinates": {
+        "latitude": 52.4080387709944,
+        "longitude": 16.9326862453689
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "ul. Stary Rynek 73 / 74",
+        "address2": "",
+        "address3": "",
+        "city": "Poznań",
+        "zip_code": "61-772",
+        "country": "PL",
+        "state": "WP",
+        "display_address": [
+          "ul. Stary Rynek 73 / 74",
+          "61-772 Poznań",
+          "Poland"
+        ]
+      },
+      "phone": "+48618586868",
+      "display_phone": "+48 61 858 68 68",
+      "distance": 2298.779442041055
+    },
+    {
+      "id": "cudZiBX6xVNSH7IWhJ3M2Q",
+      "alias": "weranda-caffe-poznań",
+      "name": "Weranda Caffe",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/HfMWgtN7b4qUgwMaorZWxg/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/weranda-caffe-pozna%C5%84?adjust_creative=FTjq3uc6_lxRoogspiYpbA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FTjq3uc6_lxRoogspiYpbA",
+      "review_count": 15,
+      "categories": [
+        {
+          "alias": "cafes",
+          "title": "Cafes"
+        },
+        {
+          "alias": "coffee",
+          "title": "Coffee & Tea"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 52.4069901,
+        "longitude": 16.9339695
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "ul. Świetosławska 10",
+        "address2": null,
+        "address3": null,
+        "city": "Poznań",
+        "zip_code": "61-840",
+        "country": "PL",
+        "state": "WP",
+        "display_address": ["ul. Świetosławska 10", "61-840 Poznań", "Poland"]
+      },
+      "phone": "+48618532587",
+      "display_phone": "+48 61 853 25 87",
+      "distance": 2357.3399745711663
+    },
+    {
+      "id": "XeSbKfFdAD9Loqyl0fj2vQ",
+      "alias": "palmiarnia-poznańska-poznań-2",
+      "name": "Palmiarnia Poznańska",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/S4rsD4nwBVcltBgD-ZzbDA/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/palmiarnia-pozna%C5%84ska-pozna%C5%84-2?adjust_creative=FTjq3uc6_lxRoogspiYpbA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FTjq3uc6_lxRoogspiYpbA",
+      "review_count": 6,
+      "categories": [
+        {
+          "alias": "gardens",
+          "title": "Botanical Gardens"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 52.401973,
+        "longitude": 16.901455
+      },
+      "transactions": [],
+      "location": {
+        "address1": "ul. Jana Matejki 18",
+        "address2": null,
+        "address3": null,
+        "city": "Poznań",
+        "zip_code": "60-767",
+        "country": "PL",
+        "state": "WP",
+        "display_address": ["ul. Jana Matejki 18", "60-767 Poznań", "Poland"]
+      },
+      "phone": "+48618658907",
+      "display_phone": "+48 61 865 89 07",
+      "distance": 158.57911243711246
+    },
+    {
+      "id": "ARxuF0-gHmBzkB0aqkX3BQ",
+      "alias": "restauracja-ratuszova-poznań-3",
+      "name": "Restauracja Ratuszova",
+      "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/z2-9QF_hbWrwCpLNF5ujqg/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/restauracja-ratuszova-pozna%C5%84-3?adjust_creative=FTjq3uc6_lxRoogspiYpbA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FTjq3uc6_lxRoogspiYpbA",
+      "review_count": 10,
+      "categories": [
+        {
+          "alias": "polish",
+          "title": "Polish"
+        }
+      ],
+      "rating": 5,
+      "coordinates": {
+        "latitude": 52.4075487950647,
+        "longitude": 16.9339872143128
+      },
+      "transactions": [],
+      "price": "$$$",
+      "location": {
+        "address1": "ul. Stary Rynek 55",
+        "address2": "",
+        "address3": "",
+        "city": "Poznań",
+        "zip_code": "61-772",
+        "country": "PL",
+        "state": "WP",
+        "display_address": ["ul. Stary Rynek 55", "61-772 Poznań", "Poland"]
+      },
+      "phone": "+48618510513",
+      "display_phone": "+48 61 851 05 13",
+      "distance": 2362.825444810523
+    },
+    {
+      "id": "mnz-J7EckE1g4fGo8GDQIQ",
+      "alias": "kyokai-sushi-bar-poznań",
+      "name": "Kyokai Sushi Bar",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/QA-pJwPKjQ70vTDYFTBU0w/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/kyokai-sushi-bar-pozna%C5%84?adjust_creative=FTjq3uc6_lxRoogspiYpbA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FTjq3uc6_lxRoogspiYpbA",
+      "review_count": 5,
+      "categories": [
+        {
+          "alias": "sushi",
+          "title": "Sushi Bars"
+        },
+        {
+          "alias": "japanese",
+          "title": "Japanese"
+        }
+      ],
+      "rating": 5,
+      "coordinates": {
+        "latitude": 52.401018,
+        "longitude": 16.894193
+      },
+      "transactions": [],
+      "price": "$$$$",
+      "location": {
+        "address1": "ul. Wojskowa 4",
+        "address2": null,
+        "address3": null,
+        "city": "Poznań",
+        "zip_code": "60-792",
+        "country": "PL",
+        "state": "WP",
+        "display_address": ["ul. Wojskowa 4", "60-792 Poznań", "Poland"]
+      },
+      "phone": "+48519376182",
+      "display_phone": "+48 519 376 182",
+      "distance": 470.80295734704856
+    },
+    {
+      "id": "rw_q8kvUR-JRvnmM_5vyPw",
+      "alias": "trattoria-donatello-poznań-2",
+      "name": "Trattoria Donatello",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/p-u6CgH0bIpEjdTvBOpELA/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/trattoria-donatello-pozna%C5%84-2?adjust_creative=FTjq3uc6_lxRoogspiYpbA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FTjq3uc6_lxRoogspiYpbA",
+      "review_count": 6,
+      "categories": [
+        {
+          "alias": "italian",
+          "title": "Italian"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 52.4044304,
+        "longitude": 16.8954906
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "ul. Grunwaldzka 29C",
+        "address2": null,
+        "address3": null,
+        "city": "Poznań",
+        "zip_code": "60-783",
+        "country": "PL",
+        "state": "WP",
+        "display_address": ["ul. Grunwaldzka 29C", "60-783 Poznań", "Poland"]
+      },
+      "phone": "+48618653299",
+      "display_phone": "+48 61 865 32 99",
+      "distance": 569.7978260278059
+    },
+    {
+      "id": "KdzK3WQwH4Gv5aSBl3RXKQ",
+      "alias": "manekin-poznań-3",
+      "name": "Manekin",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/dxdIYgAerZCOcbmFBtcaAA/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/manekin-pozna%C5%84-3?adjust_creative=FTjq3uc6_lxRoogspiYpbA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FTjq3uc6_lxRoogspiYpbA",
+      "review_count": 10,
+      "categories": [
+        {
+          "alias": "creperies",
+          "title": "Creperies"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 52.40237,
+        "longitude": 16.930645
+      },
+      "transactions": [],
+      "price": "$",
+      "location": {
+        "address1": "ul. Kwiatowa 3",
+        "address2": "",
+        "address3": "",
+        "city": "Poznań",
+        "zip_code": "",
+        "country": "PL",
+        "state": "WP",
+        "display_address": ["ul. Kwiatowa 3", "Poznań", "Poland"]
+      },
+      "phone": "+48612220001",
+      "display_phone": "+48 61 222 00 01",
+      "distance": 2014.9507021655795
+    },
+    {
+      "id": "L92jnVz_pSFTB065AOq7Xg",
+      "alias": "bar-a-boo-poznań-2",
+      "name": "Bar a Boo",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/CKLH8HvYlXcDHWUC0eGLYA/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/bar-a-boo-pozna%C5%84-2?adjust_creative=FTjq3uc6_lxRoogspiYpbA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FTjq3uc6_lxRoogspiYpbA",
+      "review_count": 12,
+      "categories": [
+        {
+          "alias": "italian",
+          "title": "Italian"
+        },
+        {
+          "alias": "pizza",
+          "title": "Pizza"
+        },
+        {
+          "alias": "cocktailbars",
+          "title": "Cocktail Bars"
+        }
+      ],
+      "rating": 4,
+      "coordinates": {
+        "latitude": 52.4058220303183,
+        "longitude": 16.920463182209
+      },
+      "transactions": [],
+      "price": "$",
+      "location": {
+        "address1": "ul. Taczaka 11 / 2",
+        "address2": "",
+        "address3": "",
+        "city": "Poznań",
+        "zip_code": "61-819",
+        "country": "PL",
+        "state": "WP",
+        "display_address": ["ul. Taczaka 11 / 2", "61-819 Poznań", "Poland"]
+      },
+      "phone": "+48618834315",
+      "display_phone": "+48 61 883 43 15",
+      "distance": 1438.2956710000676
+    },
+    {
+      "id": "k51-NN-JgkZpvMHN_TH-eQ",
+      "alias": "yetz-tu-poznań",
+      "name": "Yetz Tu",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/nmICYWrj2r92fC7mjyKpwA/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/yetz-tu-pozna%C5%84?adjust_creative=FTjq3uc6_lxRoogspiYpbA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FTjq3uc6_lxRoogspiYpbA",
+      "review_count": 7,
+      "categories": [
+        {
+          "alias": "japanese",
+          "title": "Japanese"
+        },
+        {
+          "alias": "sushi",
+          "title": "Sushi Bars"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 52.40414,
+        "longitude": 16.92917
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "ul. Bolesława Krysiewicza 6",
+        "address2": null,
+        "address3": null,
+        "city": "Poznań",
+        "zip_code": "61-825",
+        "country": "PL",
+        "state": "WP",
+        "display_address": [
+          "ul. Bolesława Krysiewicza 6",
+          "61-825 Poznań",
+          "Poland"
+        ]
+      },
+      "phone": "+48618401712",
+      "display_phone": "+48 61 840 17 12",
+      "distance": 1979.797009820147
+    },
+    {
+      "id": "oEyp1SyTSjRrA0SruyaOrg",
+      "alias": "lars-lars-a-lars-poznań",
+      "name": "Lars Lars & Lars",
+      "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/ULKRxtL0B1H5Vcvkr8K2PQ/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/lars-lars-a-lars-pozna%C5%84?adjust_creative=FTjq3uc6_lxRoogspiYpbA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FTjq3uc6_lxRoogspiYpbA",
+      "review_count": 6,
+      "categories": [
+        {
+          "alias": "scandinavian",
+          "title": "Scandinavian"
+        },
+        {
+          "alias": "bars",
+          "title": "Bars"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 52.4011080603407,
+        "longitude": 16.8940929695964
+      },
+      "transactions": [],
+      "price": "$$$",
+      "location": {
+        "address1": "ul. Wojskowa 4",
+        "address2": "",
+        "address3": "",
+        "city": "Poznań",
+        "zip_code": "61-792",
+        "country": "PL",
+        "state": "WP",
+        "display_address": ["ul. Wojskowa 4", "61-792 Poznań", "Poland"]
+      },
+      "phone": "+48665509895",
+      "display_phone": "+48 665 509 895",
+      "distance": 478.7122995469056
+    },
+    {
+      "id": "Rcfb2mZ0St0dV4lW0EVWsw",
+      "alias": "pyra-bar-poznań-2",
+      "name": "Pyra Bar",
+      "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/6YcKJ6y1cBTQnoc_lAnZbw/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/pyra-bar-pozna%C5%84-2?adjust_creative=FTjq3uc6_lxRoogspiYpbA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FTjq3uc6_lxRoogspiYpbA",
+      "review_count": 17,
+      "categories": [
+        {
+          "alias": "polish",
+          "title": "Polish"
+        }
+      ],
+      "rating": 4,
+      "coordinates": {
+        "latitude": 52.4044609,
+        "longitude": 16.9333305
+      },
+      "transactions": [],
+      "price": "$",
+      "location": {
+        "address1": "ul. Strzelecka 13",
+        "address2": "",
+        "address3": "",
+        "city": "Poznań",
+        "zip_code": "61-845",
+        "country": "PL",
+        "state": "WP",
+        "display_address": ["ul. Strzelecka 13", "61-845 Poznań", "Poland"]
+      },
+      "phone": "+48618516762",
+      "display_phone": "+48 61 851 67 62",
+      "distance": 2229.205793073644
+    },
+    {
+      "id": "siXHw-IbEEASXmpvCMc6nA",
+      "alias": "a-nóż-widelec-poznań-2",
+      "name": "A nóż widelec",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/fPwLwblZ1yim5VLefte7nw/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/a-n%C3%B3%C5%BC-widelec-pozna%C5%84-2?adjust_creative=FTjq3uc6_lxRoogspiYpbA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FTjq3uc6_lxRoogspiYpbA",
+      "review_count": 5,
+      "categories": [
+        {
+          "alias": "modern_european",
+          "title": "Modern European"
+        },
+        {
+          "alias": "polish",
+          "title": "Polish"
+        }
+      ],
+      "rating": 5,
+      "coordinates": {
+        "latitude": 52.3766,
+        "longitude": 16.89
+      },
+      "transactions": [],
+      "price": "$$$$",
+      "location": {
+        "address1": "ul. Czechosłowacka 133",
+        "address2": null,
+        "address3": null,
+        "city": "Poznań",
+        "zip_code": "60-001",
+        "country": "PL",
+        "state": "WP",
+        "display_address": ["ul. Czechosłowacka 133", "60-001 Poznań", "Poland"]
+      },
+      "phone": "+48618329178",
+      "display_phone": "+48 61 832 91 78",
+      "distance": 2768.9716413782226
+    },
+    {
+      "id": "QZrGRFRSlzvGvz9TEGheRg",
+      "alias": "sushi-matii-poznań",
+      "name": "Sushi Matii",
+      "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/ozbfQcbbAMXEsEZ0DkDH4A/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/sushi-matii-pozna%C5%84?adjust_creative=FTjq3uc6_lxRoogspiYpbA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FTjq3uc6_lxRoogspiYpbA",
+      "review_count": 8,
+      "categories": [
+        {
+          "alias": "sushi",
+          "title": "Sushi Bars"
+        },
+        {
+          "alias": "japanese",
+          "title": "Japanese"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 52.400646,
+        "longitude": 16.92663
+      },
+      "transactions": [],
+      "price": "$$$$",
+      "location": {
+        "address1": "pl. Andersa 5",
+        "address2": null,
+        "address3": null,
+        "city": "Poznań",
+        "zip_code": "61-849",
+        "country": "PL",
+        "state": "WP",
+        "display_address": ["pl. Andersa 5", "61-849 Poznań", "Poland"]
+      },
+      "phone": "+48618505020",
+      "display_phone": "+48 61 850 50 20",
+      "distance": 1732.589130122807
+    },
+    {
+      "id": "RdjKs4T6R2-LhhNRpXVTeg",
+      "alias": "lavenda-gastro-a-cafe-poznań",
+      "name": "Lavenda Gastro & Cafe",
+      "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/OkH9fu5gJDJjQ0Ck9FAm2g/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/lavenda-gastro-a-cafe-pozna%C5%84?adjust_creative=FTjq3uc6_lxRoogspiYpbA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FTjq3uc6_lxRoogspiYpbA",
+      "review_count": 6,
+      "categories": [
+        {
+          "alias": "cafes",
+          "title": "Cafes"
+        },
+        {
+          "alias": "polish",
+          "title": "Polish"
+        },
+        {
+          "alias": "breakfast_brunch",
+          "title": "Breakfast & Brunch"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 52.4075242,
+        "longitude": 16.9354368
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "ul. Wodna 3 / 4",
+        "address2": null,
+        "address3": null,
+        "city": "Poznań",
+        "zip_code": "61-781",
+        "country": "PL",
+        "state": "WP",
+        "display_address": ["ul. Wodna 3 / 4", "61-781 Poznań", "Poland"]
+      },
+      "phone": "+48618524995",
+      "display_phone": "+48 61 852 49 95",
+      "distance": 2455.04913447031
+    },
+    {
+      "id": "y7sB64YezfNcyhJH3zIv5g",
+      "alias": "malta-poznań-poznań",
+      "name": "Malta Poznań",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/k3RCVhJnMHkUTC-H4qVkHw/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/malta-pozna%C5%84-pozna%C5%84?adjust_creative=FTjq3uc6_lxRoogspiYpbA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FTjq3uc6_lxRoogspiYpbA",
+      "review_count": 8,
+      "categories": [
+        {
+          "alias": "lakes",
+          "title": "Lakes"
+        }
+      ],
+      "rating": 4.5,
+      "coordinates": {
+        "latitude": 52.402309,
+        "longitude": 16.970259
+      },
+      "transactions": [],
+      "location": {
+        "address1": "ul. Wiankowa 3",
+        "address2": null,
+        "address3": null,
+        "city": "Poznań",
+        "zip_code": "61-131",
+        "country": "PL",
+        "state": "WP",
+        "display_address": ["ul. Wiankowa 3", "61-131 Poznań", "Poland"]
+      },
+      "phone": "+48618766011",
+      "display_phone": "+48 61 876 60 11",
+      "distance": 4696.453757296065
+    },
+    {
+      "id": "2gSwAzgqKelF-KmqqSGApA",
+      "alias": "cafe-la-ruina-i-raj-poznań",
+      "name": "Cafe La Ruina i Raj",
+      "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/HQEM-n56IoleT6BRCeDH2Q/o.jpg",
+      "is_closed": false,
+      "url": "https://www.yelp.com/biz/cafe-la-ruina-i-raj-pozna%C5%84?adjust_creative=FTjq3uc6_lxRoogspiYpbA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FTjq3uc6_lxRoogspiYpbA",
+      "review_count": 5,
+      "categories": [
+        {
+          "alias": "asianfusion",
+          "title": "Asian Fusion"
+        }
+      ],
+      "rating": 5,
+      "coordinates": {
+        "latitude": 52.4112069470786,
+        "longitude": 16.9533771649003
+      },
+      "transactions": [],
+      "price": "$$",
+      "location": {
+        "address1": "ul. Śródka 3",
+        "address2": "",
+        "address3": "",
+        "city": "Poznań",
+        "zip_code": "61-125",
+        "country": "PL",
+        "state": "WP",
+        "display_address": ["ul. Śródka 3", "61-125 Poznań", "Poland"]
+      },
+      "phone": "",
+      "display_phone": "",
+      "distance": 3739.0003419565214
+    }
+  ],
+  "total": 329,
+  "region": {
+    "center": {
+      "longitude": 16.901092529296875,
+      "latitude": 52.400564113840574
+    }
+  }
+}
