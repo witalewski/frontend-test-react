@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import { Filters } from '../Filters';
 import { RestaurantsList } from '../RestaurantsList';
 
 const RestaurantsView = () => (
@@ -10,6 +11,7 @@ const RestaurantsView = () => (
         tempor incididunt ut labore et dolore magna aliqua.
       </p>
     </div>
+    <Filters />
     <RestaurantsList />
   </Fragment>
 );

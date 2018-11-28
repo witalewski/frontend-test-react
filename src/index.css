@@ -202,6 +202,29 @@ h3 {
   font-size: 20px;
 }
 
+.filters {
+    display: flex;
+    align-items: center;
+}
+
+.filters__open-now {
+    display: none;
+}
+
+.filters__open-now + label {
+    display:inline-block;
+    width:16px;
+    height:16px;
+
+    margin: 0 4px;
+
+    background:url(/static/media/open-now-checkbox--unchecked.png);
+    cursor:pointer;
+}
+.filters__open-now:checked + label {
+    background:url(/static/media/open-now-checkbox--checked.png) ;
+}
+
 
 
 /* Solution for stars is insolently copied from https://codepen.io/machal/pen/yayxGv */
