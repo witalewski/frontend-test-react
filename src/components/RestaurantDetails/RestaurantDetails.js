@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import { toJS } from 'mobx';
 import { inject, observer } from 'mobx-react';
 import { Status } from '../Status';
 import { StarRating } from '../StarRating';
 import { Photos } from '../Photos';
+import { ReviewsList } from '../ReviewsList';
 import {
   convertToFriendlyRoute,
   getGoogleMapsLinkForRestaurant,
@@ -63,9 +63,7 @@ class RestaurantDetails extends Component {
         <div className="restaurants-details__address">
           {location.display_address.join(', ')}
         </div>
-        <div className="restaurants-list-item__learn-more-wrapper">
-          <Link to={`/${convertToFriendlyRoute(name)}`}>Learn more</Link>
-        </div>
+        <ReviewsList />
       </div>
     );
   }

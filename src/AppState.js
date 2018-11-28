@@ -19,7 +19,7 @@ class AppState {
     this.setCurrentRestaurantReviews(null);
     // TODO fetch data
     this.setCurrentRestaurantDetails(MOCK_RESTAURANT);
-    this.setCurrentRestaurantReviews(MOCK_REVIEWS);
+    this.setCurrentRestaurantReviews(MOCK_REVIEWS.reviews);
 
   }
 
