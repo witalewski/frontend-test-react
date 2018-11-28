@@ -23,7 +23,7 @@ const RestaurantItem = ({
         <Status open={!is_closed} />
       </div>
       <div className="restaurants-list-item__learn-more-wrapper">
-        <Link to={`/${convertToFriendlyRoute(name)}`}>Learn more</Link>
+        <Link to={`/restaurant/${convertToFriendlyRoute(name)}`}>Learn more</Link>
       </div>
     </div>
   );

@@ -1,14 +1,20 @@
 import React from 'react';
 import { bool, number, shape, string } from 'prop-types';
 import { Link } from 'react-router-dom';
-import { PropTypes } from 'mobx-react';
+import { inject, observer, PropTypes } from 'mobx-react';
 import { Status } from '../Status';
 import { StarRating } from '../StarRating';
 import { convertToFriendlyRoute } from '../../utils';
 
-const RestaurantsDetails = ({
-  restaurant: { name, image_url, rating, categories, price, is_closed },
-}) => {
+const RestaurantDetails = ({ match, restaurants }) => {
+  const {
+    categories,
+    name,
+    image_url,
+    rating,
+    price,
+    is_closed,
+  } = restaurants[0];
   const category = categories.length && categories[0].title;
 
   return (
@@ -29,7 +35,7 @@ const RestaurantsDetails = ({
   );
 };
 
-RestaurantsDetails.propTypes = {
+RestaurantDetails.propTypes = {
   restaurant: shape({
     name: string,
     image_url: string,
@@ -44,4 +50,7 @@ RestaurantsDetails.propTypes = {
   is_closed: bool,
 };
 
-export { RestaurantsDetails };
+export { RestaurantDetails };
+export default inject(({ appState }) => ({
+  restaurants: appState.restaurants,
+}))(observer(RestaurantDetails));
