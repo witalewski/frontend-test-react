@@ -1,6 +1,30 @@
 import React from 'react';
+import dayjs from 'dayjs';
+export const ReviewItem = ({ review }) => {
+  const {
+    text,
+    time_created,
+    user: { name, image_url, profile_url },
+  } = review;
 
-export const ReviewItem = ({review}) => {
-    const { text } = review;
-    return (<div className="review-item">{text}</div>);
-}
+  const image = image_url ? (
+    <img className="review-item__author-image" alt={name} src={image_url} />
+  ) : (
+    <div className="review-item__author-image-placeholder" />
+  );
+
+  return (
+    <div className="review-item">
+      <div className="review-item__author">
+        {image}
+        <div>
+          <h3>{name}</h3>
+          <p className="review-item__date">
+            {dayjs(time_created).format('M/D/YYYY')}
+          </p>
+        </div>
+      </div>
+      <div className="review-item__content">{text}</div>
+    </div>
+  );
+};

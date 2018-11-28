@@ -41,27 +41,29 @@ class RestaurantDetails extends Component {
 
     return (
       <div className="restaurants-details">
-        <h1>{name}</h1>
-        <StarRating rating={rating} />
-        <div className="restaurants-details-item__details">
-          <div>
-            {category} • {price}
+        <div className="restaurants-details__main">
+          <h1>{name}</h1>
+          <StarRating rating={rating} />
+          <div className="restaurants-details-item__details">
+            <div>
+              {category} • {price}
+            </div>
+            <Status open={!is_closed} />
           </div>
-          <Status open={!is_closed} />
-        </div>
-        <div className="restaurant-details__photos">
-          <Photos
-            photos={[
-              {
-                url: getGoogleMapsLinkForRestaurant(currentRestaurantDetails),
-                src: getStaticMapForLocation(coordinates),
-              },
-              ...photos.map(photo => ({ src: photo })),
-            ]}
-          />
-        </div>
-        <div className="restaurants-details__address">
-          {location.display_address.join(', ')}
+          <div className="restaurant-details__photos">
+            <Photos
+              photos={[
+                {
+                  url: getGoogleMapsLinkForRestaurant(currentRestaurantDetails),
+                  src: getStaticMapForLocation(coordinates),
+                },
+                ...photos.map(photo => ({ src: photo })),
+              ]}
+            />
+          </div>
+          <div className="restaurants-details__address">
+            {location.display_address.join(', ')}
+          </div>
         </div>
         <ReviewsList />
       </div>
