@@ -2,6 +2,7 @@ import React from 'react';
 import { bool, number, shape, string } from 'prop-types';
 import { PropTypes } from 'mobx-react';
 import { Status } from '../Status';
+import { StarRating } from '../StarRating';
 
 const RestaurantItem = ({
   restaurant: { name, image_url, rating, categories, price, is_closed },
@@ -12,7 +13,7 @@ const RestaurantItem = ({
     <div className="restaurants-list-item">
       <img alt={name} src={image_url} />
       <h2>{name}</h2>
-      <p className="restaurants-list-item-rating">{rating}</p>
+      <StarRating rating={rating} />
       <div className="restaurants-list-item__details">
         <div>
           {category} • {price}

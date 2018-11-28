@@ -48,7 +48,7 @@ h2 {
   margin-bottom: 12px;
 }
 
-.restaurants-list-item-rating {
+.restaurants-list-item .star-rating {
   margin-top: 8px;
   margin-bottom: 10px;
 }
