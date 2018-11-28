@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import { Provider } from 'mobx-react';
 import { AppState } from './AppState';
-import { RestaurantsList } from './components/RestaurantsList';
+import { RestaurantsView } from './components/RestaurantsView';
 
 class App extends Component {
   appState = new AppState();
-  
+
   render() {
     return (
       <div className="App">
         <Provider appState={this.appState}>
-          <RestaurantsList />
+          <RestaurantsView />
         </Provider>
       </div>
     );

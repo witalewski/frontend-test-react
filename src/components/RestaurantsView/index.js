@@ -1,0 +1,1 @@
+export { default as RestaurantsView } from './RestaurantsView';
