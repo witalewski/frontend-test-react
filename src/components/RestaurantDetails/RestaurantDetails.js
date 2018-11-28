@@ -34,8 +34,8 @@ class RestaurantDetails extends Component {
 
   getContent() {
     const { currentRestaurantDetails } = this.props;
-    const { name, coordinates, photos, location } = currentRestaurantDetails;
-    const { categories, rating, price, is_closed } = this.state.restaurant;
+    const { name, coordinates, photos, location, rating } = currentRestaurantDetails;
+    const { categories, price, is_closed } = this.state.restaurant;
 
     const category = categories.length && categories[0].title;
 

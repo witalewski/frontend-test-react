@@ -128,7 +128,7 @@ h3 {
 }
 
 .restaurants-details__main {
-    padding: 0 68px;
+  padding: 0 68px;
 }
 
 .restaurants-details-item__details {
@@ -143,9 +143,9 @@ h3 {
 }
 
 .reviews h2 {
-    position: relative;
-    left: 68px;
-    top: 90px;
+  position: relative;
+  left: 68px;
+  top: 90px;
 }
 
 .reviews__list {
@@ -197,4 +197,36 @@ h3 {
 
 .review-item__content {
   font-size: 20px;
+}
+
+
+
+/* Solution for stars is insolently copied from https://codepen.io/machal/pen/yayxGv */
+.star {
+  fill: #48440e;
+  stroke: #48440e;
+  stroke-width: 1;
+}
+
+.star--half {
+  fill: url(#halfGradient);
+}
+
+.star--empty {
+  fill: none;
+}
+
+.star {
+  height: 30px;
+}
+
+.star-source {
+  position: absolute;
+  width: 0;
+  top: 0;
+}
+
+svg {
+  display: inline-block;
+  vertical-align: top;
 }
