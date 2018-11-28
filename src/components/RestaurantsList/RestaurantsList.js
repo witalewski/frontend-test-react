@@ -7,19 +7,17 @@ class RestaurantsList extends Component {
   static propTypes = {
     restaurants: PropTypes.arrayOrObservableArrayOf(
       shape({
-        restaurant: shape({
-            name: string,
-            image_url: string,
-            rating: number,
-            categories: PropTypes.arrayOrObservableArrayOf(
-              shape({
-                title: string,
-              })
-            ),
-            price: string,
-          }).isRequired,
-          is_closed: bool,
-      })
+        name: string,
+        image_url: string,
+        rating: number,
+        categories: PropTypes.arrayOrObservableArrayOf(
+          shape({
+            title: string,
+          })
+        ),
+        price: string,
+        is_closed: bool,
+      }).isRequired
     ).isRequired,
   };
   render() {

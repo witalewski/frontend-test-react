@@ -6,7 +6,12 @@ import { Status } from '../Status';
 import { StarRating } from '../StarRating';
 import { convertToFriendlyRoute } from '../../utils';
 
-const RestaurantDetails = ({ match, restaurants }) => {
+const RestaurantDetails = ({
+  match: {
+    params: { urlFriendlyName },
+  },
+  restaurants,
+}) => {
   const {
     categories,
     name,
@@ -36,18 +41,25 @@ const RestaurantDetails = ({ match, restaurants }) => {
 };
 
 RestaurantDetails.propTypes = {
-  restaurant: shape({
-    name: string,
-    image_url: string,
-    rating: number,
-    categories: PropTypes.arrayOrObservableArrayOf(
-      shape({
-        title: string,
-      })
-    ),
-    price: string,
+  restaurants: PropTypes.arrayOrObservableArrayOf(
+    shape({
+      name: string,
+      image_url: string,
+      rating: number,
+      categories: PropTypes.arrayOrObservableArrayOf(
+        shape({
+          title: string,
+        })
+      ),
+      price: string,
+      is_closed: bool,
+    }).isRequired
+  ).isRequired,
+  match: shape({
+    params: shape({
+      urlFriendlyName: string,
+    }),
   }).isRequired,
-  is_closed: bool,
 };
 
 export { RestaurantDetails };
