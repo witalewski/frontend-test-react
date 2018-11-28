@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { bool, number, shape, string } from 'prop-types';
 import { Link } from 'react-router-dom';
 import { toJS } from 'mobx';
-import { inject, observer, PropTypes } from 'mobx-react';
+import { inject, observer } from 'mobx-react';
 import { Status } from '../Status';
 import { StarRating } from '../StarRating';
 import { convertToFriendlyRoute } from '../../utils';

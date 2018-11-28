@@ -1,25 +1,8 @@
 import React, { Component } from 'react';
-import { bool, number, shape, string } from 'prop-types';
-import { inject, observer, PropTypes } from 'mobx-react';
+import { inject, observer } from 'mobx-react';
 import { RestaurantItem } from './RestaurantItem';
 
 class RestaurantsList extends Component {
-  static propTypes = {
-    restaurants: PropTypes.arrayOrObservableArrayOf(
-      shape({
-        name: string,
-        image_url: string,
-        rating: number,
-        categories: PropTypes.arrayOrObservableArrayOf(
-          shape({
-            title: string,
-          })
-        ),
-        price: string,
-        is_closed: bool,
-      }).isRequired
-    ).isRequired,
-  };
   render() {
     return (
       <div className="restaurants-list">
