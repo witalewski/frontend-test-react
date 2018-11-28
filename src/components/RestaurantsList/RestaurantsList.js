@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { shape, string } from 'prop-types';
+import { bool, number, shape, string } from 'prop-types';
 import { inject, observer, PropTypes } from 'mobx-react';
 import { RestaurantItem } from './RestaurantItem';
 
@@ -7,9 +7,18 @@ class RestaurantsList extends Component {
   static propTypes = {
     restaurants: PropTypes.arrayOrObservableArrayOf(
       shape({
-        id: string.isRequired,
-        name: string.isRequired,
-        image_url: string.isRequired,
+        restaurant: shape({
+            name: string,
+            image_url: string,
+            rating: number,
+            categories: PropTypes.arrayOrObservableArrayOf(
+              shape({
+                title: string,
+              })
+            ),
+            price: string,
+          }).isRequired,
+          is_closed: bool,
       })
     ).isRequired,
   };
