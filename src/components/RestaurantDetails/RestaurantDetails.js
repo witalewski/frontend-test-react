@@ -42,6 +42,13 @@ class RestaurantDetails extends Component {
     return (
       <div className="restaurants-details">
         <h1>{name}</h1>
+        <StarRating rating={rating} />
+        <div className="restaurants-details-item__details">
+          <div>
+            {category} • {price}
+          </div>
+          <Status open={!is_closed} />
+        </div>
         <div className="restaurant-details__photos">
           <Photos
             photos={[
@@ -55,13 +62,6 @@ class RestaurantDetails extends Component {
         </div>
         <div className="restaurants-details__address">
           {location.display_address.join(', ')}
-        </div>
-        <StarRating rating={rating} />
-        <div className="restaurants-list-item__details">
-          <div>
-            {category} • {price}
-          </div>
-          <Status open={!is_closed} />
         </div>
         <div className="restaurants-list-item__learn-more-wrapper">
           <Link to={`/${convertToFriendlyRoute(name)}`}>Learn more</Link>

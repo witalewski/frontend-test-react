@@ -114,3 +114,14 @@ h2 {
     height: 228px;
     margin-bottom: 12px;
   }
+
+  .restaurants-details-item__details {
+    display: flex;
+    justify-content: space-between;
+  
+    margin-top: 10px;
+    margin-bottom: 12px;
+  
+    font-size: 22px;
+    color: #757575;
+  }
