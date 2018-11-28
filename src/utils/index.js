@@ -1,0 +1,1 @@
+export { convertToFriendlyRoute } from './convertToFriendlyRoute';

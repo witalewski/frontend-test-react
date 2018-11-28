@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { PropTypes } from 'mobx-react';
 import { Status } from '../Status';
 import { StarRating } from '../StarRating';
+import { convertToFriendlyRoute } from '../../utils';
 
 const RestaurantItem = ({
   restaurant: { name, image_url, rating, categories, price, is_closed },
@@ -22,7 +23,7 @@ const RestaurantItem = ({
         <Status open={!is_closed} />
       </div>
       <div className="restaurants-list-item__learn-more-wrapper">
-        <Link to={`/${name.replace(/\W/g,'-')}`}>Learn more</Link>
+        <Link to={`/${convertToFriendlyRoute(name)}`}>Learn more</Link>
       </div>
     </div>
   );
