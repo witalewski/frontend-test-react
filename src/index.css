@@ -27,8 +27,8 @@ h3 {
   font-size: 22px;
 }
 
-.hero p {
-  max-width: 50%;
+.restaurants-view {
+    padding: 68px;
 }
 
 .restaurants-list ul {
@@ -216,7 +216,7 @@ h3 {
     width:16px;
     height:16px;
 
-    margin: 0 4px;
+    margin: 0 4px 0 12px;
 
     background:url(/static/media/open-now-checkbox--unchecked.png);
     cursor:pointer;
@@ -229,8 +229,8 @@ h3 {
 
 /* Solution for stars is insolently copied from https://codepen.io/machal/pen/yayxGv */
 .star {
-  fill: #48440e;
-  stroke: #48440e;
+  fill: #002B56;
+  stroke: #002B56;
   stroke-width: 1;
 }
 

@@ -3,7 +3,7 @@ import React from 'react';
 /* Solution for stars is insolently copied from https://codepen.io/machal/pen/yayxGv */
 export const StarTemplate = () => (
   <svg
-    class="star-source"
+    className="star-source"
     xmlns="http://www.w3.org/2000/svg"
     xlinkHref="http://www.w3.org/1999/xlink"
   >
@@ -16,8 +16,8 @@ export const StarTemplate = () => (
       </g>
 
       <linearGradient id="halfGradient">
-        <stop stop-opacity="1" offset="50%" stop-color="#48440E" />
-        <stop stop-opacity="0" offset="50%" />
+        <stop stopOpacity="1" offset="50%" stopColor="#002B56" />
+        <stop stopOpacity="0" offset="50%" />
       </linearGradient>
     </defs>
   </svg>

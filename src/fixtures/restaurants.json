@@ -48,7 +48,7 @@
       "alias": "wiejskie-jadło-poznań-2",
       "name": "Wiejskie Jadło",
       "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/WFfeZgjsS7Gh-bv7hG-MJw/o.jpg",
-      "is_closed": false,
+      "is_closed": true,
       "url": "https://www.yelp.com/biz/wiejskie-jad%C5%82o-pozna%C5%84-2?adjust_creative=FTjq3uc6_lxRoogspiYpbA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FTjq3uc6_lxRoogspiYpbA",
       "review_count": 15,
       "categories": [
@@ -130,7 +130,7 @@
       "alias": "cacao-republika-poznań",
       "name": "Cacao Republika",
       "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/8KgHCDGNncE8j8qjDUoYIA/o.jpg",
-      "is_closed": false,
+      "is_closed": true,
       "url": "https://www.yelp.com/biz/cacao-republika-pozna%C5%84?adjust_creative=FTjq3uc6_lxRoogspiYpbA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=FTjq3uc6_lxRoogspiYpbA",
       "review_count": 15,
       "categories": [

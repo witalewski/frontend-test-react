@@ -21,7 +21,7 @@ const StarRating = ({ rating }) => {
   }
   return (
     <div className="star-rating">
-        <svg class="star" viewBox="0 0 180 32">
+        <svg className="star" viewBox="0 0 180 32">
           {stars}
         </svg>
     </div>

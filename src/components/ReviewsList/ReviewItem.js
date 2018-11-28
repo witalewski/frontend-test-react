@@ -6,7 +6,7 @@ export const ReviewItem = ({ review }) => {
     text,
     time_created,
     rating,
-    user: { name, image_url, profile_url },
+    user: { name, image_url },
   } = review;
 
   const image = image_url ? (
@@ -27,8 +27,8 @@ export const ReviewItem = ({ review }) => {
         </div>
       </div>
       <div className="review-item__content">
-      <StarRating rating={rating}/>
-      <p>{text}</p>
+        <StarRating rating={rating} />
+        <p>{text}</p>
       </div>
     </div>
   );
