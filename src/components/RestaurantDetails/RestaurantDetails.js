@@ -1,68 +1,70 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { bool, number, shape, string } from 'prop-types';
 import { Link } from 'react-router-dom';
+import { toJS } from 'mobx';
 import { inject, observer, PropTypes } from 'mobx-react';
 import { Status } from '../Status';
 import { StarRating } from '../StarRating';
 import { convertToFriendlyRoute } from '../../utils';
 
-const RestaurantDetails = ({
-  match: {
-    params: { urlFriendlyName },
-  },
-  restaurants,
-}) => {
-  const {
-    categories,
-    name,
-    image_url,
-    rating,
-    price,
-    is_closed,
-  } = restaurants[0];
-  const category = categories.length && categories[0].title;
+class RestaurantDetails extends Component {
+  componentDidMount() {
+    const {
+      match: {
+        params: { urlFriendlyName },
+      },
+      restaurants,
+      setCurrentRestaurantId,
+    } = this.props;
+    const restaurant = toJS(
+      restaurants.find(
+        ({ name }) => convertToFriendlyRoute(name) === urlFriendlyName
+      )
+    );
+    this.setState({
+      restaurant,
+    });
+    setCurrentRestaurantId(restaurant.id);
+  }
 
-  return (
-    <div className="restaurants-details">
-      <img alt={name} src={image_url} />
-      <h2>{name}</h2>
-      <StarRating rating={rating} />
-      <div className="restaurants-list-item__details">
-        <div>
-          {category} • {price}
+  getContent() {
+    const { currentRestaurantDetails } = this.props;
+    const {
+      categories,
+      name,
+      image_url,
+      rating,
+      price,
+      is_closed,
+    } = this.state.restaurant;
+
+    const category = categories.length && categories[0].title;
+
+    return (
+      <div className="restaurants-details">
+        <h1>{name}</h1>
+        <img alt={name} src={image_url} />
+        <StarRating rating={rating} />
+        <div className="restaurants-list-item__details">
+          <div>
+            {category} • {price}
+          </div>
+          <Status open={!is_closed} />
         </div>
-        <Status open={!is_closed} />
+        <div className="restaurants-list-item__learn-more-wrapper">
+          <Link to={`/${convertToFriendlyRoute(name)}`}>Learn more</Link>
+        </div>
       </div>
-      <div className="restaurants-list-item__learn-more-wrapper">
-        <Link to={`/${convertToFriendlyRoute(name)}`}>Learn more</Link>
-      </div>
-    </div>
-  );
-};
-
-RestaurantDetails.propTypes = {
-  restaurants: PropTypes.arrayOrObservableArrayOf(
-    shape({
-      name: string,
-      image_url: string,
-      rating: number,
-      categories: PropTypes.arrayOrObservableArrayOf(
-        shape({
-          title: string,
-        })
-      ),
-      price: string,
-      is_closed: bool,
-    }).isRequired
-  ).isRequired,
-  match: shape({
-    params: shape({
-      urlFriendlyName: string,
-    }),
-  }).isRequired,
-};
+    );
+  }
+  render() {
+    return this.state ? this.getContent() : null;
+  }
+}
 
 export { RestaurantDetails };
 export default inject(({ appState }) => ({
   restaurants: appState.restaurants,
+  setCurrentRestaurantId: appState.setCurrentRestaurantId,
+  currentRestaurantDetails: appState.currentRestaurantDetails,
 }))(observer(RestaurantDetails));
