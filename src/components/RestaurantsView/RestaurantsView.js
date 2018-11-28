@@ -1,40 +1,17 @@
-import React, { Component, Fragment } from 'react';
-import { shape, string } from 'prop-types';
-import { inject, observer, PropTypes } from 'mobx-react';
+import React, { Fragment } from 'react';
+import { RestaurantsList } from '../RestaurantsList';
 
-class RestaurantsView extends Component {
-  static propTypes = {
-    restaurants: PropTypes.arrayOrObservableArrayOf(
-      shape({
-        id: string.isRequired,
-        name: string.isRequired,
-      })
-    ).isRequired,
-  };
-  render() {
-    return (
-      <Fragment>
-        <div className="hero">
-          <h1>Restaurants</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
-        <div className="restaurants-list">
-          <ul>
-            {this.props.restaurants.map(({ id, name }) => (
-              <li key={id}>{name}</li>
-            ))}
-          </ul>
-        </div>
-      </Fragment>
-    );
-  }
-}
+const RestaurantsView = () => (
+  <Fragment>
+    <div className="hero">
+      <h1>Restaurants</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </div>
+    <RestaurantsList />
+  </Fragment>
+);
 
 export { RestaurantsView };
-export default inject(({ appState }) => ({
-  restaurants: appState.restaurants,
-  setRestaurants: appState.setRestaurants,
-}))(observer(RestaurantsView));

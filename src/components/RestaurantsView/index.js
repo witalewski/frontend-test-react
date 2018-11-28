@@ -1,1 +1,1 @@
-export { default as RestaurantsView } from './RestaurantsView';
+export { RestaurantsView } from './RestaurantsView';
