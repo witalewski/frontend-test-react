@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import { Provider } from 'mobx-react';
+import DevTools from 'mobx-react-devtools';
 import { AppState } from './AppState';
 import { StarTemplate } from './defs/StarTemplate';
 import { RestaurantsView } from './components/RestaurantsView';
@@ -21,6 +22,7 @@ class App extends Component {
             />
           </Switch>
         </Provider>
+        <DevTools />
         <StarTemplate />
       </div>
     );

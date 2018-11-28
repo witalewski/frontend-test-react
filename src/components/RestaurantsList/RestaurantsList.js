@@ -7,7 +7,7 @@ class RestaurantsList extends Component {
     return (
       <div className="restaurants-list">
         <ul>
-          {this.props.filteredRestaurants.map(restaurant => (
+          {this.props.restaurants.map(restaurant => (
             <li key={restaurant.id}>
               <RestaurantItem restaurant={restaurant} />
             </li>
@@ -20,6 +20,6 @@ class RestaurantsList extends Component {
 
 export { RestaurantsList };
 export default inject(({ appState }) => ({
-  filteredRestaurants: appState.restaurants,
+  restaurants: appState.filteredRestaurants,
   setRestaurants: appState.setRestaurants,
 }))(observer(RestaurantsList));
