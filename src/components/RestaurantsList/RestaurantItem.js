@@ -1,5 +1,6 @@
 import React from 'react';
 import { bool, number, shape, string } from 'prop-types';
+import { Link } from 'react-router-dom';
 import { PropTypes } from 'mobx-react';
 import { Status } from '../Status';
 import { StarRating } from '../StarRating';
@@ -21,7 +22,7 @@ const RestaurantItem = ({
         <Status open={!is_closed} />
       </div>
       <div className="restaurants-list-item__learn-more-wrapper">
-        <button>Learn more</button>
+        <Link to={`/${name.replace(/\W/g,'-')}`}>Learn more</Link>
       </div>
     </div>
   );
