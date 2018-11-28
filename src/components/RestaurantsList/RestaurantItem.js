@@ -5,21 +5,26 @@ import { PropTypes } from 'mobx-react';
 const RestaurantItem = ({
   restaurant: { name, image_url, rating, categories, price, is_closed },
 }) => {
-    const category = categories.length && categories[0].title;
-    const status = is_closed ? 'Closed' : 'Open now';
+  const category = categories.length && categories[0].title;
+  const status = is_closed ? 'Closed' : 'Open now';
 
-    return (
-  <div className="restaurants-list-item">
-    <img alt={name} src={image_url} />
-    <h2>{name}</h2>
-    <p>{rating}</p>
-    <div className="restaurants-list-item__details">
-        <span>{category} • {price}</span>
+  return (
+    <div className="restaurants-list-item">
+      <img alt={name} src={image_url} />
+      <h2>{name}</h2>
+      <p className="restaurants-list-item-rating">{rating}</p>
+      <div className="restaurants-list-item__details">
+        <span>
+          {category} • {price}
+        </span>
         <span>{status}</span>
+      </div>
+      <div className="restaurants-list-item__learn-more-wrapper">
+        <button>Learn more</button>
+      </div>
     </div>
-  </div>
-);
-    }
+  );
+};
 
 RestaurantItem.propTypes = {
   restaurant: shape({
