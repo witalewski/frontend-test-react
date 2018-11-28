@@ -67,14 +67,11 @@ h2 {
 
 .restaurants-list-item__status-indicator {
     margin-right: 4px;
+    color: #FF3548;
 }
 
 .restaurants-list-item__status-indicator--open {
     color: #00E8A4;
-}
-
-.restaurants-list-item__status-indicator--closed {
-    color: #FF3548;
 }
 
 .restaurants-list-item__learn-more-wrapper {
