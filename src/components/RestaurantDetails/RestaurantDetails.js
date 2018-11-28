@@ -4,7 +4,12 @@ import { toJS } from 'mobx';
 import { inject, observer } from 'mobx-react';
 import { Status } from '../Status';
 import { StarRating } from '../StarRating';
-import { convertToFriendlyRoute } from '../../utils';
+import { Photos } from '../Photos';
+import {
+  convertToFriendlyRoute,
+  getGoogleMapsLinkForRestaurant,
+  getStaticMapForLocation,
+} from '../../utils';
 
 class RestaurantDetails extends Component {
   componentDidMount() {
@@ -15,6 +20,7 @@ class RestaurantDetails extends Component {
       restaurants,
       setCurrentRestaurantId,
     } = this.props;
+
     const restaurant = toJS(
       restaurants.find(
         ({ name }) => convertToFriendlyRoute(name) === urlFriendlyName
@@ -28,21 +34,28 @@ class RestaurantDetails extends Component {
 
   getContent() {
     const { currentRestaurantDetails } = this.props;
-    const {
-      categories,
-      name,
-      image_url,
-      rating,
-      price,
-      is_closed,
-    } = this.state.restaurant;
+    const { name, coordinates, photos, location } = currentRestaurantDetails;
+    const { categories, rating, price, is_closed } = this.state.restaurant;
 
     const category = categories.length && categories[0].title;
 
     return (
       <div className="restaurants-details">
         <h1>{name}</h1>
-        <img alt={name} src={image_url} />
+        <div className="restaurant-details__photos">
+          <Photos
+            photos={[
+              {
+                url: getGoogleMapsLinkForRestaurant(currentRestaurantDetails),
+                src: getStaticMapForLocation(coordinates),
+              },
+              ...photos.map(photo => ({ src: photo })),
+            ]}
+          />
+        </div>
+        <div className="restaurants-details__address">
+          {location.display_address.join(', ')}
+        </div>
         <StarRating rating={rating} />
         <div className="restaurants-list-item__details">
           <div>
@@ -57,7 +70,9 @@ class RestaurantDetails extends Component {
     );
   }
   render() {
-    return this.state ? this.getContent() : null;
+    return this.state && this.props.currentRestaurantDetails
+      ? this.getContent()
+      : null;
   }
 }
 
