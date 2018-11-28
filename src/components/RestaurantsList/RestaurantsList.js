@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { shape, string } from 'prop-types';
 import { inject, observer, PropTypes } from 'mobx-react';
+import { RestaurantItem } from './RestaurantItem';
 
 class RestaurantsList extends Component {
   static propTypes = {
@@ -8,6 +9,7 @@ class RestaurantsList extends Component {
       shape({
         id: string.isRequired,
         name: string.isRequired,
+        image_url: string.isRequired,
       })
     ).isRequired,
   };
@@ -15,8 +17,10 @@ class RestaurantsList extends Component {
     return (
       <div className="restaurants-list">
         <ul>
-          {this.props.restaurants.map(({ id, name }) => (
-            <li key={id}>{name}</li>
+          {this.props.restaurants.map(restaurant => (
+            <li key={restaurant.id}>
+              <RestaurantItem restaurant={restaurant} />
+            </li>
           ))}
         </ul>
       </div>
