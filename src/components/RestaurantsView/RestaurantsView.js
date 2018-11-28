@@ -16,10 +16,10 @@ class RestaurantsView extends Component {
       <Fragment>
         <div className="hero">
           <h1>Restaurants</h1>
-        </div>
-        <div>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
         </div>
         <div className="restaurants-list">
           <ul>

@@ -3,3 +3,24 @@
 body {
   font-family: 'Raleway', sans-serif;
 }
+
+h1 {
+    font-weight: normal;
+    font-size: 54px;
+}
+
+.hero p {
+    max-width: 50%;
+}
+
+.restaurants-list ul {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding-left: 0;
+    list-style: none;
+}
+
+.restaurants-list ul li {
+    flex: 200px 1 1;
+}
