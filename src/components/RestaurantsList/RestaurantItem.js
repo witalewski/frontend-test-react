@@ -6,7 +6,18 @@ const RestaurantItem = ({
   restaurant: { name, image_url, rating, categories, price, is_closed },
 }) => {
   const category = categories.length && categories[0].title;
-  const status = is_closed ? 'Closed' : 'Open now';
+  const status = (
+    <span>
+      <span
+        className={`restaurants-list-item__status-indicator restaurants-list-item__status-indicator--${
+          is_closed ? 'closed' : 'open'
+        }`}
+      >
+        ⬤
+      </span>
+      {is_closed ? 'Closed' : 'Open now'}
+    </span>
+  );
 
   return (
     <div className="restaurants-list-item">
@@ -17,7 +28,7 @@ const RestaurantItem = ({
         <span>
           {category} • {price}
         </span>
-        <span>{status}</span>
+        {status}
       </div>
       <div className="restaurants-list-item__learn-more-wrapper">
         <button>Learn more</button>
