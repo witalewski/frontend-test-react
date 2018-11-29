@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
-import { toJS } from 'mobx';
 import { inject, observer } from 'mobx-react';
 import { Status } from '../Status';
 import { StarRating } from '../StarRating';
 import { Photos } from '../Photos';
 import { ReviewsList } from '../ReviewsList';
 import {
-  convertToFriendlyRoute,
   getGoogleMapsLinkForRestaurant,
   getStaticMapForLocation,
 } from '../../utils';
@@ -15,31 +13,25 @@ class RestaurantDetails extends Component {
   componentDidMount() {
     const {
       match: {
-        params: { urlFriendlyName },
+        params: { id },
       },
-      restaurants,
       setCurrentRestaurantId,
     } = this.props;
-
-    const restaurant = toJS(
-      restaurants.find(
-        ({ name }) => convertToFriendlyRoute(name) === urlFriendlyName
-      )
-    );
-    if (restaurant) {
-       this.setState({
-        restaurant,
-        });
-        setCurrentRestaurantId(restaurant.id);
-    } else {
-        window.location.pathname = "";
-    }
+    setCurrentRestaurantId(id);
   }
 
   getContent() {
     const { currentRestaurantDetails } = this.props;
-    const { name, coordinates, photos, location, rating } = currentRestaurantDetails;
-    const { categories, price, is_closed } = this.state.restaurant;
+    const {
+      name,
+      coordinates,
+      photos,
+      location,
+      rating,
+      categories,
+      price,
+      is_closed,
+    } = currentRestaurantDetails;
 
     const category = categories.length && categories[0].title;
 
@@ -74,7 +66,7 @@ class RestaurantDetails extends Component {
     );
   }
   render() {
-    return this.state && this.props.currentRestaurantDetails
+    return this.props.currentRestaurantDetails
       ? this.getContent()
       : null;
   }
@@ -82,7 +74,6 @@ class RestaurantDetails extends Component {
 
 export { RestaurantDetails };
 export default inject(({ appState }) => ({
-  restaurants: appState.restaurants,
   setCurrentRestaurantId: appState.setCurrentRestaurantId,
   currentRestaurantDetails: appState.currentRestaurantDetails,
 }))(observer(RestaurantDetails));

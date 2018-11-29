@@ -10,7 +10,7 @@ const ReviewsList = ({ currentRestaurantReviews }) => {
       <h2>{headerText}</h2>
       <ul className="reviews__list">
         {currentRestaurantReviews.map(review => (
-          <ReviewItem review={review} />
+          <li key={review.id}><ReviewItem review={review} /></li>
         ))}
       </ul>
     </div>

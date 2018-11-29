@@ -5,7 +5,7 @@ import { StarRating } from '../StarRating';
 import { convertToFriendlyRoute } from '../../utils';
 
 const RestaurantItem = ({
-  restaurant: { name, image_url, rating, categories, price, is_closed },
+  restaurant: { id, name, image_url, rating, categories, price, is_closed },
 }) => {
   const category = categories.length && categories[0].title;
 
@@ -21,7 +21,7 @@ const RestaurantItem = ({
         <Status open={!is_closed} />
       </div>
       <div className="restaurants-list-item__learn-more-wrapper">
-        <Link to={`/restaurant/${convertToFriendlyRoute(name)}`}>Learn more</Link>
+        <Link to={`/restaurant/${id}/${convertToFriendlyRoute(name)}`}>Learn more</Link>
       </div>
     </div>
   );
