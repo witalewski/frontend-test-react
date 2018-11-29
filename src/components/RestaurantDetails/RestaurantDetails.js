@@ -26,10 +26,14 @@ class RestaurantDetails extends Component {
         ({ name }) => convertToFriendlyRoute(name) === urlFriendlyName
       )
     );
-    this.setState({
-      restaurant,
-    });
-    setCurrentRestaurantId(restaurant.id);
+    if (restaurant) {
+       this.setState({
+        restaurant,
+        });
+        setCurrentRestaurantId(restaurant.id);
+    } else {
+        window.location.pathname = "";
+    }
   }
 
   getContent() {

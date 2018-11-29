@@ -3,6 +3,9 @@ import { inject, observer } from 'mobx-react';
 import { RestaurantItem } from './RestaurantItem';
 
 class RestaurantsList extends Component {
+  componentDidMount() {
+      window.navigator.geolocation.getCurrentPosition(({coords: {latitude, longitude }}) => this.props.getRestaurants(`${latitude},${longitude}`));
+  }
   render() {
     return (
       <div className="restaurants-list">
@@ -21,5 +24,5 @@ class RestaurantsList extends Component {
 export { RestaurantsList };
 export default inject(({ appState }) => ({
   restaurants: appState.filteredRestaurants,
-  setRestaurants: appState.setRestaurants,
+  getRestaurants: appState.getRestaurants,
 }))(observer(RestaurantsList));
