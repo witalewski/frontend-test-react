@@ -212,6 +212,10 @@ h3 {
 }
 
 .filters__category-label {
+    margin-left: 24px;
+    margin-right: 8px;
+}
+.filters__price-label {
     margin-right: 8px;
 }
 

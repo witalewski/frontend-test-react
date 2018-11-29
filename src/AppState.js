@@ -14,6 +14,7 @@ class AppState {
   @observable currentRestaurantReviews;
   @observable filterByOpenNow = false;
   @observable filterByCategory = '';
+  @observable filterByPrice = '';
 
   @action getRestaurants = location =>
     this.yelpApi
@@ -46,9 +47,13 @@ class AppState {
   @action setFilterByOpenNow = filterByOpenNow => {
     this.filterByOpenNow = filterByOpenNow;
   };
-  
+
   @action setFilterByCategory = filterByCategory => {
     this.filterByCategory = filterByCategory;
+  };
+
+  @action setFilterByPrice = filterByPrice => {
+    this.filterByPrice = filterByPrice;
   };
 
   @computed get filteredRestaurants() {
@@ -57,7 +62,14 @@ class AppState {
       filteredRestaurants = filteredRestaurants.filter(r => !r.is_closed);
     }
     if (this.filterByCategory) {
-      filteredRestaurants = filteredRestaurants.filter(r => r.categories.find(c => c.title === this.filterByCategory));
+      filteredRestaurants = filteredRestaurants.filter(r =>
+        r.categories.find(c => c.title === this.filterByCategory)
+      );
+    }
+    if (this.filterByPrice) {
+      filteredRestaurants = filteredRestaurants.filter(
+        r => r.price === this.filterByPrice
+      );
     }
     return filteredRestaurants;
   }

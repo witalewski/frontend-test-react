@@ -12,6 +12,9 @@ export class Filters extends Component {
   onCategoryChange = ({ target: { value } }) =>
     this.props.setFilterByCategory(value);
 
+  onPriceChange = ({ target: { value } }) =>
+    this.props.setFilterByPrice(value);
+
   render() {
     return (
       <div className="filters">
@@ -30,6 +33,24 @@ export class Filters extends Component {
         />
         <label htmlFor="opennow" />
         <span className="filters__open-now-label">Open Now</span>
+        <span className="filters__price-label">Price</span>
+        <select onChange={this.onPriceChange}>
+          <option key="All" value="">
+            All prices
+          </option>
+          <option key="$" value="$">
+            $
+          </option>
+          <option key="$$" value="$$">
+            $$
+          </option>
+          <option key="$$$" value="$$$">
+            $$$
+          </option>
+          <option key="$$$$" value="$$$$">
+            $$$$
+          </option>
+        </select>
         <span className="filters__category-label">Category</span>
         <select onChange={this.onCategoryChange}>
           <option key="All" value="">
@@ -51,4 +72,5 @@ export default inject(({ appState }) => ({
   setFilterByOpenNow: appState.setFilterByOpenNow,
   categories: appState.categories,
   setFilterByCategory: appState.setFilterByCategory,
+  setFilterByPrice: appState.setFilterByPrice,
 }))(observer(Filters));
