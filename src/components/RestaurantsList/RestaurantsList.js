@@ -4,7 +4,7 @@ import { RestaurantItem } from './RestaurantItem';
 
 class RestaurantsList extends Component {
   componentDidMount() {
-      window.navigator.geolocation.getCurrentPosition(({coords: {latitude, longitude }}) => this.props.getRestaurants(`${latitude},${longitude}`));
+    this.props.getRestaurants("Las%20Vegas");
   }
   render() {
     return (

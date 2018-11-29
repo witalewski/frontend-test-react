@@ -1,9 +1,6 @@
 import { action, observable, computed } from 'mobx';
 import { YelpApi } from './YelpApi';
 import { Set } from 'core-js';
-// import MOCK_RESTAURANTS from './fixtures/restaurants.json';
-// import MOCK_RESTAURANT from './fixtures/restaurant.json';
-// import MOCK_REVIEWS from './fixtures/reviews.json';
 
 class AppState {
   yelpApi = new YelpApi();
@@ -75,7 +72,7 @@ class AppState {
   }
 
   @computed get categories() {
-    return [
+    return this.restaurants ? [
       ...new Set(
         this.restaurants.reduce(
           (acc, { categories }) => [
@@ -85,7 +82,7 @@ class AppState {
           []
         )
       ),
-    ];
+    ] : [];
   }
 }
 
