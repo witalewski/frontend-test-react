@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Filters matches snapshot 1`] = `
+<div
+  className="filters"
+>
+  <div
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+  >
+    <img
+      alt="c1"
+      src="open-now-checkbox--unchecked.png"
+    />
+    <img
+      alt="c2"
+      src="open-now-checkbox--checked.png"
+    />
+  </div>
+  Filter by:
+  <input
+    checked={true}
+    className="filters__open-now"
+    id="opennow"
+    onChange={[Function]}
+    type="checkbox"
+  />
+  <label
+    htmlFor="opennow"
+  />
+  <span
+    className="filters__open-now-label"
+  >
+    Open Now
+  </span>
+  <span
+    className="filters__price-label"
+  >
+    Price
+  </span>
+  <select
+    onChange={[Function]}
+  >
+    <option
+      value=""
+    >
+      All prices
+    </option>
+    <option
+      value="$"
+    >
+      $
+    </option>
+    <option
+      value="$$"
+    >
+      $$
+    </option>
+    <option
+      value="$$$"
+    >
+      $$$
+    </option>
+    <option
+      value="$$$$"
+    >
+      $$$$
+    </option>
+  </select>
+  <span
+    className="filters__category-label"
+  >
+    Category
+  </span>
+  <select
+    onChange={[Function]}
+  >
+    <option
+      value=""
+    >
+      All categories
+    </option>
+    <option
+      value="Cafe"
+    >
+      Cafe
+    </option>
+    <option
+      value="Modern European"
+    >
+      Modern European
+    </option>
+  </select>
+</div>
+`;

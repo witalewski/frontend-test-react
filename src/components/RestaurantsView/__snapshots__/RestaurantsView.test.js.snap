@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RestaurantsView matches snapshot 1`] = `
+<div
+  className="restaurants-view"
+>
+  <div
+    className="hero"
+  >
+    <h1>
+      Restaurants
+    </h1>
+  </div>
+  <inject-Filters />
+  <inject-RestaurantsList />
+</div>
+`;

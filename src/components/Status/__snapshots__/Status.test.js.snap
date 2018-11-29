@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Status matches snapshot 1`] = `
+<div
+  className="status"
+>
+  <span
+    className="status__indicator status__indicator--open"
+  >
+    ⬤
+  </span>
+  Open Now
+</div>
+`;
