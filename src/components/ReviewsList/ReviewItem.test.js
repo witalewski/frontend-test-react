@@ -6,9 +6,7 @@ import { ReviewItem } from './ReviewItem';
 describe('ReviewItem', () => {
   it('matches snapshot', () => {
     const renderer = new ShallowRenderer();
-    renderer.render(
-      <ReviewItem review={MOCK_REVIEWS.reviews[0]} />
-    );
+    renderer.render(<ReviewItem review={MOCK_REVIEWS.reviews[0]} />);
     const result = renderer.getRenderOutput();
 
     expect(result).toMatchSnapshot();

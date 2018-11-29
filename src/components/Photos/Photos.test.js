@@ -7,7 +7,7 @@ describe('Photos', () => {
   it('matches snapshot', () => {
     const renderer = new ShallowRenderer();
     renderer.render(
-      <Photos photos={MOCK_RESTAURANT.photos.map(src => ({src}))} />
+      <Photos photos={MOCK_RESTAURANT.photos.map(src => ({ src }))} />
     );
     const result = renderer.getRenderOutput();
 

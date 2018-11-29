@@ -6,9 +6,7 @@ import { Status } from './Status';
 describe('Status', () => {
   it('matches snapshot', () => {
     const renderer = new ShallowRenderer();
-    renderer.render(
-      <Status open={!MOCK_RESTAURANT.is_closed} />
-    );
+    renderer.render(<Status open={!MOCK_RESTAURANT.is_closed} />);
     const result = renderer.getRenderOutput();
 
     expect(result).toMatchSnapshot();

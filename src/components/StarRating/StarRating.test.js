@@ -6,9 +6,7 @@ import { StarRating } from './StarRating';
 describe('StarRating', () => {
   it('matches snapshot', () => {
     const renderer = new ShallowRenderer();
-    renderer.render(
-      <StarRating rating={MOCK_RESTAURANT.rating} />
-    );
+    renderer.render(<StarRating rating={MOCK_RESTAURANT.rating} />);
     const result = renderer.getRenderOutput();
 
     expect(result).toMatchSnapshot();

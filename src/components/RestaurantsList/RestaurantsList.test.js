@@ -7,7 +7,10 @@ describe('RestaurantsList', () => {
   it('matches snapshot', () => {
     const renderer = new ShallowRenderer();
     renderer.render(
-      <RestaurantsList restaurants={MOCK_RESTAURANTS.businesses} getRestaurants={jest.fn()} />
+      <RestaurantsList
+        restaurants={MOCK_RESTAURANTS.businesses}
+        getRestaurants={jest.fn()}
+      />
     );
     const result = renderer.getRenderOutput();
 

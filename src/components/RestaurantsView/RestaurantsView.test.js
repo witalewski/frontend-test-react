@@ -5,9 +5,7 @@ import { RestaurantsView } from './RestaurantsView';
 describe('RestaurantsView', () => {
   it('matches snapshot', () => {
     const renderer = new ShallowRenderer();
-    renderer.render(
-      <RestaurantsView />
-    );
+    renderer.render(<RestaurantsView />);
     const result = renderer.getRenderOutput();
 
     expect(result).toMatchSnapshot();

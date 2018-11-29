@@ -6,9 +6,7 @@ import { RestaurantItem } from './RestaurantItem';
 describe('RestaurantItem', () => {
   it('matches snapshot', () => {
     const renderer = new ShallowRenderer();
-    renderer.render(
-      <RestaurantItem restaurant={MOCK_RESTAURANT} />
-    );
+    renderer.render(<RestaurantItem restaurant={MOCK_RESTAURANT} />);
     const result = renderer.getRenderOutput();
 
     expect(result).toMatchSnapshot();

@@ -6,7 +6,13 @@ describe('Filters', () => {
   it('matches snapshot', () => {
     const renderer = new ShallowRenderer();
     renderer.render(
-      <Filters filterByOpenNow setFilterByOpenNow={jest.fn()} categories={['Cafe', 'Modern European']} setFilterByCategory={jest.fn()} setFilterByPrice={jest.fn()} />
+      <Filters
+        filterByOpenNow
+        setFilterByOpenNow={jest.fn()}
+        categories={['Cafe', 'Modern European']}
+        setFilterByCategory={jest.fn()}
+        setFilterByPrice={jest.fn()}
+      />
     );
     const result = renderer.getRenderOutput();
 

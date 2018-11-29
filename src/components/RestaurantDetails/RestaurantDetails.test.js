@@ -7,7 +7,11 @@ describe('RestaurantDetails', () => {
   it('matches snapshot', () => {
     const renderer = new ShallowRenderer();
     renderer.render(
-      <RestaurantDetails currentRestaurantDetails={MOCK_RESTAURANT} setCurrentRestaurantId={jest.fn()} match={{params:{id:MOCK_RESTAURANT.id}}} />
+      <RestaurantDetails
+        currentRestaurantDetails={MOCK_RESTAURANT}
+        setCurrentRestaurantId={jest.fn()}
+        match={{ params: { id: MOCK_RESTAURANT.id } }}
+      />
     );
     const result = renderer.getRenderOutput();
 
