@@ -4,9 +4,14 @@ import c1 from '../../assets/open-now-checkbox--unchecked.png';
 import c2 from '../../assets/open-now-checkbox--checked.png';
 
 export class Filters extends Component {
-    onFilterByOpenNowChange = ({target: {checked}}) => {
-        this.props.setFilterByOpenNow(checked)
-    }
+  componentDidMount() {}
+  onFilterByOpenNowChange = ({ target: { checked } }) => {
+    this.props.setFilterByOpenNow(checked);
+  };
+
+  onCategoryChange = ({ target: { value } }) =>
+    this.props.setFilterByCategory(value);
+
   render() {
     return (
       <div className="filters">
@@ -24,7 +29,18 @@ export class Filters extends Component {
           onChange={this.onFilterByOpenNowChange}
         />
         <label htmlFor="opennow" />
-        Open Now
+        <span className="filters__open-now-label">Open Now</span>
+        <span className="filters__category-label">Category</span>
+        <select onChange={this.onCategoryChange}>
+          <option key="All" value="">
+            All categories
+          </option>
+          {this.props.categories.map(c => (
+            <option key={c} value={c}>
+              {c}
+            </option>
+          ))}
+        </select>
       </div>
     );
   }
@@ -33,4 +49,6 @@ export class Filters extends Component {
 export default inject(({ appState }) => ({
   filterByOpenNow: appState.filterByOpenNow,
   setFilterByOpenNow: appState.setFilterByOpenNow,
+  categories: appState.categories,
+  setFilterByCategory: appState.setFilterByCategory,
 }))(observer(Filters));

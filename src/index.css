@@ -207,6 +207,14 @@ h3 {
     align-items: center;
 }
 
+.filters__open-now-label {
+    margin-right: 24px;
+}
+
+.filters__category-label {
+    margin-right: 8px;
+}
+
 .filters__open-now {
     display: none;
 }

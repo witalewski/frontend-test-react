@@ -1,5 +1,6 @@
 import { action, observable, computed } from 'mobx';
 import { YelpApi } from './YelpApi';
+import { Set } from 'core-js';
 // import MOCK_RESTAURANTS from './fixtures/restaurants.json';
 // import MOCK_RESTAURANT from './fixtures/restaurant.json';
 // import MOCK_REVIEWS from './fixtures/reviews.json';
@@ -12,6 +13,7 @@ class AppState {
   @observable currentRestaurantDetails;
   @observable currentRestaurantReviews;
   @observable filterByOpenNow = false;
+  @observable filterByCategory = '';
 
   @action getRestaurants = location =>
     this.yelpApi
@@ -25,10 +27,10 @@ class AppState {
     this.currentRestaurantId = currentRestaurantId;
     this.setCurrentRestaurantDetails(null);
     this.setCurrentRestaurantReviews([]);
-    this.yelpApi.getRestaurantDetails(currentRestaurantId).then(({data}) => {
+    this.yelpApi.getRestaurantDetails(currentRestaurantId).then(({ data }) => {
       this.setCurrentRestaurantDetails(data);
     });
-    this.yelpApi.getRestaurantReviews(currentRestaurantId).then(({data}) => {
+    this.yelpApi.getRestaurantReviews(currentRestaurantId).then(({ data }) => {
       this.setCurrentRestaurantReviews(data.reviews);
     });
   };
@@ -44,11 +46,34 @@ class AppState {
   @action setFilterByOpenNow = filterByOpenNow => {
     this.filterByOpenNow = filterByOpenNow;
   };
+  
+  @action setFilterByCategory = filterByCategory => {
+    this.filterByCategory = filterByCategory;
+  };
 
   @computed get filteredRestaurants() {
-    return this.filterByOpenNow
-      ? this.restaurants.filter(r => !r.is_closed)
-      : this.restaurants;
+    let filteredRestaurants = this.restaurants;
+    if (this.filterByOpenNow) {
+      filteredRestaurants = filteredRestaurants.filter(r => !r.is_closed);
+    }
+    if (this.filterByCategory) {
+      filteredRestaurants = filteredRestaurants.filter(r => r.categories.find(c => c.title === this.filterByCategory));
+    }
+    return filteredRestaurants;
+  }
+
+  @computed get categories() {
+    return [
+      ...new Set(
+        this.restaurants.reduce(
+          (acc, { categories }) => [
+            ...acc,
+            ...categories.map(({ title }) => title),
+          ],
+          []
+        )
+      ),
+    ];
   }
 }
 
