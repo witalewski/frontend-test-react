@@ -1,1 +1,0 @@
-export const convertToFriendlyRoute = string => string.replace(/\W/g,'-');

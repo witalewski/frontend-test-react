@@ -1,1 +1,0 @@
-export { RestaurantsView } from './RestaurantsView';
